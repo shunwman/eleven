@@ -1,9 +1,10 @@
-backend:
+backend: 
   name: git-gateway
   branch: main
 media_folder: "public/assets/blog" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/assets/blog"
- name: "blog" # Used in routes, e.g., /admin/collections/blog
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "src/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
